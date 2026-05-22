@@ -1,0 +1,42 @@
+{
+  "name": "@nikomohr/goal-cli",
+  "version": "0.2.0",
+  "description": "CLI for portable goal state and checkpoints",
+  "type": "module",
+  "bin": {
+    "goal": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Niko96-dotcom/opencode-goal.git",
+    "directory": "packages/goal-cli"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@nikomohr/goal-core": "^0.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "typescript": "^5.8.0"
+  },
+  "license": "MIT"
+}

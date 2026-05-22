@@ -1,0 +1,6 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "plugin": [
+    "file:///Users/nikolaymohr/Documents/opencode goal/packages/opencode-goal"
+  ]
+}
