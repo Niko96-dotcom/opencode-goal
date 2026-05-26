@@ -13,16 +13,25 @@ Portable **Codex-style goal loop** for OpenCode, Pi, Command Code, and Cursor-co
 ## Quick start
 
 ```bash
+git clone https://github.com/Niko96-dotcom/opencode-goal.git
 cd opencode-goal
 npm install
 npm test
 npm run build
 ```
 
-### CLI
+### CLI (npm)
 
 ```bash
-npx goal "implement feature X" --verify "npm test"
+npm install -g @nikomohr/goal-cli
+goal "implement feature X" --verify "npm test"
+goal status
+```
+
+From the repo without a global install:
+
+```bash
+npx @nikomohr/goal-cli "implement feature X" --verify "npm test"
 npx goal status
 npx goal prompt
 # After an assistant turn (pipe or --file):

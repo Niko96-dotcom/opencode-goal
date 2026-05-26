@@ -2,7 +2,7 @@
 
 ## Local config
 
-Add the plugin to `~/.config/opencode/opencode.json`:
+Copy `opencode.json.example` to `~/.config/opencode/opencode.json` (or your project config) and set an absolute `file://` path to `packages/opencode-goal`:
 
 ```json
 "plugin": [

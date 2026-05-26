@@ -3,6 +3,7 @@ dist/
 *.log
 .DS_Store
 .goal/
+opencode.json
 *.tgz
 
 # Vendored reference clones (large; not part of this package)
