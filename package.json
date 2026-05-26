@@ -10,7 +10,8 @@
     "build": "npm run build -w @nikomohr/goal-core && npm run build -w @nikomohr/goal-cli",
     "test": "npm run test -w @nikomohr/goal-core",
     "test:plugin": "tsx scripts/plugin-hook-smoke.mjs",
-    "typecheck": "npm run build -w @nikomohr/goal-core && npm run typecheck -w @nikomohr/goal-core && npm run typecheck -w @nikomohr/goal-cli && npm run typecheck -w @nikomohr/opencode-goal"
+    "typecheck": "npm run build -w @nikomohr/goal-core && npm run typecheck -w @nikomohr/goal-core && npm run typecheck -w @nikomohr/goal-cli && npm run typecheck -w @nikomohr/opencode-goal",
+    "publish:npm": "bash scripts/publish-npm.sh"
   },
   "engines": {
     "node": ">=22.0.0"

@@ -4,7 +4,8 @@
   "description": "CLI for portable goal state and checkpoints",
   "type": "module",
   "bin": {
-    "goal": "./dist/index.js"
+    "goal": "./dist/index.js",
+    "cursor-goal": "./dist/index.js"
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
